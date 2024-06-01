@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+ }
+::-webkit-scrollbar{
+    width: 10px;
+    background: transparent;
+ }
+::-webkit-scrollbar-thumb{
+    background-color: #d3d2d2;
+    border-radius: 10px;
+ }
+
+ @layer components{
+   .side-nav-option{
+      @apply h-10 w-[204px] flex items-center rounded-[10px] cursor-pointer hover:bg-[#e6e5e5];
+   } 
+   .side-nav-option i{
+      @apply h-10 w-10 text-[16px] flex justify-center items-center;
+   }
+   .side-nav-option a{
+      @apply h-10 decoration-[#0f0f0f] text-[14px] text-[#0f0f0f] flex items-center ml-5;
+   }
+}
+
+@layer components{
+   .container{
+      @apply h-64 w-full p-3 hover:bg-[#e0e0e0] hover:rounded-lg;
+   }
+   .thumbnail{
+      @apply h-[168px] w-[325px] mx-auto rounded-lg hover:rounded-none;
+   }
+   
+   .info-container{
+      @apply h-[84px] w-full flex gap-2 text-black py-1 px-2;
+   }
+   .profile-img{
+      @apply h-9 w-9 mx-3 my-4 rounded-full;
+   }
+   .video-info{
+      @apply h-[60px];
+   }
+   .caption{
+      @apply mb-1;
+   }
+   .channel-name{
+      @apply mb-1;
+   }
+   .views{
+      @apply mb-1;
+   }
+}
